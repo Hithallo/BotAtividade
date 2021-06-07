@@ -31,16 +31,20 @@ const { installMouseHelper } = require('../BotAtividade/install-mouse-helper');
         await page.mouse.click(1203,362); //Clica em Digestão
         await page.click('[class="sc-oUoif gsebta isNextButton"]'); //Passa para o proximo
 
-        await page.waitForSelector('[class="sc-qYsuA kGvpfs"]'); 
-        await page.click('[class="sc-qYsuA kGvpfs"]'); //Seleciona Sexo 
+        await page.waitForSelector('[class="sc-qYsuA kGvpfs"]'); //Clica no Sexo
+        await page.click('[class="sc-qYsuA kGvpfs"]'); 
 
         await page.waitForSelector('[value="Madre de Deus, Bahia, Brazil"]'); 
-        await page.click('[class="sc-oUoif gsebta isNextButton"]'); //Seleciona localização 
+        await page.click('[class="sc-oUoif gsebta isNextButton"]'); //Passa para o proximo
             
         sleep(1000); 
-        await page.mouse.click(569,330); 
+        await page.mouse.click(569,330); //Digita idade
         await page.mouse.click(791,427); 
-        await page.click('[class="sc-oUoif gsebta isNextButton"]'); // Seleciona idade
+        await page.click('[class="sc-oUoif gsebta isNextButton"]'); //Passa para o proximo
+
+        sleep(1000); 
+        await page.mouse.click(466,390); //Qualquer altura
+        await page.click('[class="sc-oUoif gsebta isNextButton"]'); //Passa para o proximo
 
 
 })();
