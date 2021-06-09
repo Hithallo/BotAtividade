@@ -29,7 +29,9 @@ const { installMouseHelper } = require('../BotAtividade/install-mouse-helper');
         await page.waitForSelector('[class="sc-pJUVA gaqhQz"]'); 
         sleep(1000) 
         await page.mouse.click(427,354); //Clica em Performance
-        await page.mouse.click(253,378); //Clica em Vitalidade
+        sleep(500)
+        await page.mouse.click(156,378); //Clica em Vitalidade
+        sleep(500)
         await page.mouse.click(1203,362); //Clica em Digestão
         await page.click('[class="sc-oUoif gsebta isNextButton"]'); //Passa para o proximo
 
@@ -62,8 +64,11 @@ const { installMouseHelper } = require('../BotAtividade/install-mouse-helper');
         await page.waitForSelector('[class="sc-pkHUE sc-ptfmh sc-paWCZ Uhdss"]');
         sleep(1000)
         await page.mouse.click(683,575); //Passa pelo peso
+        sleep(500)
         await page.mouse.click(683,575); //Passa pelo cardio
+        sleep(500)
         await page.mouse.click(683,575); //Passa pelo sprint
+        sleep(500)
         await page.mouse.click(683,575); //Passa pelo alongamento
 
         sleep(2000)
@@ -74,13 +79,20 @@ const { installMouseHelper } = require('../BotAtividade/install-mouse-helper');
         sleep(1000)
         await page.mouse.click(490,395); //Clica em satisfeito
 
-        //------------------------------------------------------------------------------ //consertar apartir daqui
-        await page.waitForSelector('[value="22h30"]'); 
+        await page.waitForSelector('[class="sc-oUoif gsebta isNextButton"]');
+        sleep(1000) 
         await page.click('[class="sc-oUoif gsebta isNextButton"]'); //Passa para o proximo
 
         await page.waitForSelector('[class="sc-ptBBy kpuSv"]'); 
         sleep(1000)
         await page.mouse.click(596,509); //passa por problemas relacionados a sono
+        sleep(500)
+        await page.mouse.click(596,509);
+        sleep(500)
+        await page.mouse.click(596,509);
+        sleep(500)
+        await page.mouse.click(596,509);
+        sleep(500)
         await page.mouse.click(596,509);
 
         await page.waitForSelector('[class="sc-pHIdM FLUZt"]');
@@ -94,11 +106,19 @@ const { installMouseHelper } = require('../BotAtividade/install-mouse-helper');
         await page.waitForSelector('[class="sc-pTTZH jbrDtF"]');
         sleep(1000)
         await page.mouse.click(600,563); //clica em não
+        sleep(500)
         await page.mouse.click(600,563); //clica em não
+        sleep(500)
         await page.mouse.click(600,563); //clica em não
+        sleep(500)
         await page.mouse.click(600,563); //clica em não
+        
+        await page.waitForSelector('[class="sc-pTTZH jbrDtF"]');
+        sleep(1000)
+        await page.mouse.click(598,561); //clica em não
 
-
-
+        await page.waitForSelector('[class="sc-qYhdC dmpRVY"]');
+        sleep(1000)
+        await page.mouse.click(600,503); //clica em não
         
 })();
