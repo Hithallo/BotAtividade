@@ -29,9 +29,9 @@ const { installMouseHelper } = require('../BotAtividade/install-mouse-helper');
         await page.waitForSelector('[class="sc-pJUVA gaqhQz"]'); 
         sleep(1000) 
         await page.mouse.click(427,354); //Clica em Performance
-        sleep(500)
+        sleep(600)
         await page.mouse.click(156,378); //Clica em Vitalidade
-        sleep(500)
+        sleep(600)
         await page.mouse.click(1203,362); //Clica em Digestão
         await page.click('[class="sc-oUoif gsebta isNextButton"]'); //Passa para o proximo
 
@@ -64,11 +64,11 @@ const { installMouseHelper } = require('../BotAtividade/install-mouse-helper');
         await page.waitForSelector('[class="sc-pkHUE sc-ptfmh sc-paWCZ Uhdss"]');
         sleep(1000)
         await page.mouse.click(683,575); //Passa pelo peso
-        sleep(500)
+        sleep(600)
         await page.mouse.click(683,575); //Passa pelo cardio
-        sleep(500)
+        sleep(600)
         await page.mouse.click(683,575); //Passa pelo sprint
-        sleep(500)
+        sleep(600)
         await page.mouse.click(683,575); //Passa pelo alongamento
 
         sleep(2000)
@@ -86,13 +86,13 @@ const { installMouseHelper } = require('../BotAtividade/install-mouse-helper');
         await page.waitForSelector('[class="sc-ptBBy kpuSv"]'); 
         sleep(1000)
         await page.mouse.click(596,509); //passa por problemas relacionados a sono
-        sleep(500)
+        sleep(600)
         await page.mouse.click(596,509);
-        sleep(500)
+        sleep(600)
         await page.mouse.click(596,509);
-        sleep(500)
+        sleep(600)
         await page.mouse.click(596,509);
-        sleep(500)
+        sleep(600)
         await page.mouse.click(596,509);
 
         await page.waitForSelector('[class="sc-pHIdM FLUZt"]');
@@ -106,11 +106,11 @@ const { installMouseHelper } = require('../BotAtividade/install-mouse-helper');
         await page.waitForSelector('[class="sc-pTTZH jbrDtF"]');
         sleep(1000)
         await page.mouse.click(600,563); //clica em não
-        sleep(500)
+        sleep(800)
         await page.mouse.click(600,563); //clica em não
-        sleep(500)
+        sleep(800)
         await page.mouse.click(600,563); //clica em não
-        sleep(500)
+        sleep(800)
         await page.mouse.click(600,563); //clica em não
         
         await page.waitForSelector('[class="sc-pTTZH jbrDtF"]');
@@ -120,5 +120,52 @@ const { installMouseHelper } = require('../BotAtividade/install-mouse-helper');
         await page.waitForSelector('[class="sc-qYhdC dmpRVY"]');
         sleep(1000)
         await page.mouse.click(600,503); //clica em não
+
+        await page.waitForSelector('[class="sc-pHIdM FLUZt"]');
+        sleep(1000)
+        await page.mouse.click(682,426); //clica em 1-2 copos por dia
+
+        await page.waitForSelector('[class="sc-pjGbq cpFNgU"]');
+        sleep(1000)
+        await page.mouse.click(600,517);
+        sleep(800)
+        await page.mouse.click(600,524);
+        sleep(800)
+        await page.mouse.click(600,510);
+        sleep(800)
+        await page.mouse.click(600,512);
+        sleep(800)
+        await page.mouse.click(600,510);
+        sleep(800)
+        await page.mouse.click(600,518);
+
+        await page.waitForSelector('[class="sc-qXjgK sZlfd"]');
+        sleep(1000)
+        await page.mouse.click(200,450);
         
+        //---------------------------------------------------------------------------------
+        await page.waitForSelector('[class="sc-qXJKU cHKXqv"]');
+        sleep(1000)
+        await page.mouse.click(682,517);
+        sleep(800)
+        await page.mouse.click(682,518);
+        sleep(800)
+        await page.mouse.click(682,518);
+        sleep(800)
+        await page.mouse.click(682,518);
+        sleep(800)
+        await page.mouse.click(682,518);
+        sleep(800)
+        await page.mouse.click(682,518);
+        sleep(800)
+        await page.mouse.click(682,518);
+        sleep(800)
+        await page.mouse.click(682,518);
+        sleep(800)
+        await page.mouse.click(682,518);
+        sleep(800)
+        await page.mouse.click(682,518);
+        sleep(800)
+        await page.mouse.click(682,518);
+
 })();
