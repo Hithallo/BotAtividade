@@ -143,29 +143,58 @@ const { installMouseHelper } = require('../BotAtividade/install-mouse-helper');
         sleep(1000)
         await page.mouse.click(200,450);
         
-        //---------------------------------------------------------------------------------
         await page.waitForSelector('[class="sc-qXJKU cHKXqv"]');
         sleep(1000)
         await page.mouse.click(682,517);
         sleep(800)
-        await page.mouse.click(682,518);
+        await page.mouse.click(676,519);
         sleep(800)
-        await page.mouse.click(682,518);
+        await page.mouse.click(683,515);
         sleep(800)
-        await page.mouse.click(682,518);
+        await page.mouse.click(682,516);
         sleep(800)
-        await page.mouse.click(682,518);
+        await page.mouse.click(679,520);
         sleep(800)
-        await page.mouse.click(682,518);
+        await page.mouse.click(690,511);
         sleep(800)
-        await page.mouse.click(682,518);
+        await page.mouse.click(683,519);
         sleep(800)
-        await page.mouse.click(682,518);
+        await page.mouse.click(674,517);
         sleep(800)
-        await page.mouse.click(682,518);
+        await page.mouse.click(681,520);
         sleep(800)
-        await page.mouse.click(682,518);
+        await page.mouse.click(681,510);
         sleep(800)
-        await page.mouse.click(682,518);
+        await page.mouse.click(700,515);
+        sleep(800)
+        await page.mouse.click(660,520);
+        sleep(800)
+        await page.mouse.click(680,510);
+
+        await page.waitForSelector('[class="sc-pCNZD fnwmst"]');
+        sleep(1000)
+        await page.mouse.click(607,295);
+
+        await page.waitForSelector('[class="sc-pLxQr dlxlap"]');
+        sleep(1000)
+        await page.mouse.click(605,337);
+
+        await page.waitForSelector('[class="sc-qWgaf hUwOjB"]');
+        sleep(1000)
+        await page.mouse.click(605,235);
+
+        await page.waitForSelector('[class="sc-oUoif gsebta isNextButton"]');
+        sleep(1000) 
+        await page.click('[class="sc-oUoif gsebta isNextButton"]'); //Passa para o proximo
+
+        await page.waitForSelector('[class="sc-pDabv bbwRJT"]');
+        sleep(1000)
+        await page.mouse.click(612,235);
+
+        await page.waitForSelector('[class="sc-pcJBx lhKOHh"]');
+        sleep(1000)
+        await page.mouse.click(612,235);
+        sleep(3000)
+        browser.close();
 
 })();
